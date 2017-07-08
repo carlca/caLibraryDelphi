@@ -1,0 +1,200 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{77d58fef-2068-4aca-9bb7-baa02722bf3a}</ProjectGuid>
+    <MainSource>caRunD7.dpk</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>C:\Documents and Settings\All Users\Documents\RAD Studio\5.0\Bpl\caRunD7.bpl</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_AssertionsAtRuntime>False</DCC_AssertionsAtRuntime>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_GenerateStackFrames>True</DCC_GenerateStackFrames>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>DEBUG;JEDI_INC;RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_AssertionsAtRuntime>False</DCC_AssertionsAtRuntime>
+    <DCC_GenerateStackFrames>True</DCC_GenerateStackFrames>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>DEBUG;JEDI_INC</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>Package</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject xmlns=""> <Delphi.Personality>   <Parameters>
+      <Parameters Name="UseLauncher">False</Parameters>
+      <Parameters Name="LoadAllSymbols">True</Parameters>
+      <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+    </Parameters>
+    <Package_Options>
+      <Package_Options Name="PackageDescription">Carls components (run-time)</Package_Options>
+      <Package_Options Name="ImplicitBuild">False</Package_Options>
+      <Package_Options Name="DesigntimeOnly">False</Package_Options>
+      <Package_Options Name="RuntimeOnly">True</Package_Options>
+    </Package_Options>
+    <VersionInfo>
+      <VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+      <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+      <VersionInfo Name="MajorVer">1</VersionInfo>
+      <VersionInfo Name="MinorVer">0</VersionInfo>
+      <VersionInfo Name="Release">0</VersionInfo>
+      <VersionInfo Name="Build">0</VersionInfo>
+      <VersionInfo Name="Debug">False</VersionInfo>
+      <VersionInfo Name="PreRelease">False</VersionInfo>
+      <VersionInfo Name="Special">False</VersionInfo>
+      <VersionInfo Name="Private">False</VersionInfo>
+      <VersionInfo Name="DLL">False</VersionInfo>
+      <VersionInfo Name="Locale">2057</VersionInfo>
+      <VersionInfo Name="CodePage">1252</VersionInfo>
+    </VersionInfo>
+    <VersionInfoKeys>
+      <VersionInfoKeys Name="CompanyName"></VersionInfoKeys>
+      <VersionInfoKeys Name="FileDescription"></VersionInfoKeys>
+      <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="InternalName"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+      <VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys>
+      <VersionInfoKeys Name="ProductName"></VersionInfoKeys>
+      <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="Comments"></VersionInfoKeys>
+    </VersionInfoKeys>
+    <Source>
+      <Source Name="MainSource">caRunD7.dpk</Source>
+    </Source>
+  </Delphi.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <ItemGroup />
+  <ItemGroup>
+    <DelphiCompile Include="caRunD7.dpk">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="ca8087.pas" />
+    <DCCReference Include="caActionMgr.pas" />
+    <DCCReference Include="caActionMgrForm.pas">
+      <Form>caActionManagerForm</Form>
+    </DCCReference>
+    <DCCReference Include="caActions.pas" />
+    <DCCReference Include="caAppConfig.pas" />
+    <DCCReference Include="caArrays.pas" />
+    <DCCReference Include="caBaseDataset.pas" />
+    <DCCReference Include="caButtons.pas" />
+    <DCCReference Include="caCell.pas" />
+    <DCCReference Include="caChangeParent.pas" />
+    <DCCReference Include="caChart.pas" />
+    <DCCReference Include="caChartLegendListBox.pas" />
+    <DCCReference Include="caCheckbox.pas" />
+    <DCCReference Include="caChiSquared.pas" />
+    <DCCReference Include="caClasses.pas" />
+    <DCCReference Include="caColorPicker.pas" />
+    <DCCReference Include="caConsts.pas" />
+    <DCCReference Include="caControls.dcr" />
+    <DCCReference Include="caControls.dcr" />
+    <DCCReference Include="caControls.pas" />
+    <DCCReference Include="caCrypt.pas" />
+    <DCCReference Include="caCSV.pas" />
+    <DCCReference Include="caD5Compat.pas" />
+    <DCCReference Include="caDiagram.pas" />
+    <DCCReference Include="caDir.pas" />
+    <DCCReference Include="caDirListView.pas" />
+    <DCCReference Include="caEdit.pas" />
+    <DCCReference Include="caEditListBox.pas" />
+    <DCCReference Include="caExcel.pas" />
+    <DCCReference Include="caFastFuncs.pas" />
+    <DCCReference Include="caFastStrings.pas" />
+    <DCCReference Include="caFlyout.pas" />
+    <DCCReference Include="caFont.pas" />
+    <DCCReference Include="caFormHook.pas" />
+    <DCCReference Include="caFormInitializer.pas" />
+    <DCCReference Include="caForms.pas" />
+    <DCCReference Include="caFormScaler.pas" />
+    <DCCReference Include="caFrame.pas" />
+    <DCCReference Include="caGenetic.pas" />
+    <DCCReference Include="caGoalSeek.pas" />
+    <DCCReference Include="caGraphics.pas" />
+    <DCCReference Include="caHash.pas" />
+    <DCCReference Include="caHTML.pas" />
+    <DCCReference Include="caHTMLIndexer.pas" />
+    <DCCReference Include="caHTMLParser.pas" />
+    <DCCReference Include="caIni.pas" />
+    <DCCReference Include="caIntf.pas" />
+    <DCCReference Include="caKeyMonitor.pas" />
+    <DCCReference Include="caLabel.pas" />
+    <DCCReference Include="caListView.pas" />
+    <DCCReference Include="caLocalizer.pas" />
+    <DCCReference Include="caLocalizerForm.pas">
+      <Form>caLocalizerDialog</Form>
+    </DCCReference>
+    <DCCReference Include="caLog.pas" />
+    <DCCReference Include="caMarkup.pas" />
+    <DCCReference Include="caMath.pas" />
+    <DCCReference Include="caMathEval.pas" />
+    <DCCReference Include="caMatrix.pas" />
+    <DCCReference Include="caMatrixDataset.pas" />
+    <DCCReference Include="caMemMapImage.pas" />
+    <DCCReference Include="caMemory.pas" />
+    <DCCReference Include="caMenu.dcr" />
+    <DCCReference Include="caMenu.dcr" />
+    <DCCReference Include="caMenu.pas" />
+    <DCCReference Include="caMenuBar.pas" />
+    <DCCReference Include="caMessages.pas" />
+    <DCCReference Include="caMime.pas" />
+    <DCCReference Include="caMimeStream.pas" />
+    <DCCReference Include="caMtxVec.pas" />
+    <DCCReference Include="caMutex.pas" />
+    <DCCReference Include="caNetAPI.pas" />
+    <DCCReference Include="caNetwork.pas" />
+    <DCCReference Include="caNodes.pas" />
+    <DCCReference Include="caNotifyIcon.pas" />
+    <DCCReference Include="caPageControl.dcr" />
+    <DCCReference Include="caPageControl.dcr" />
+    <DCCReference Include="caPageControl.pas" />
+    <DCCReference Include="caPopupMenu.pas" />
+    <DCCReference Include="caPrimes.pas" />
+    <DCCReference Include="caProcesses.pas" />
+    <DCCReference Include="caProfiler.pas" />
+    <DCCReference Include="caProgress.pas" />
+    <DCCReference Include="caRadioButton.pas" />
+    <DCCReference Include="caRandom.pas" />
+    <DCCReference Include="caRichEd.pas" />
+    <DCCReference Include="caRTTI.pas" />
+    <DCCReference Include="caServices.pas" />
+    <DCCReference Include="caShell.pas">
+      <Form>caSelectFolderForm</Form>
+    </DCCReference>
+    <DCCReference Include="caSizeBar.pas" />
+    <DCCReference Include="caSizeMove.pas" />
+    <DCCReference Include="caSizeMovePanel.pas" />
+    <DCCReference Include="caStackObjects.pas" />
+    <DCCReference Include="caStats.pas" />
+    <DCCReference Include="caStatsBase.pas" />
+    <DCCReference Include="caStructures.pas" />
+    <DCCReference Include="caSystemMenu.pas" />
+    <DCCReference Include="caTextStore.pas" />
+    <DCCReference Include="caTextStream.pas" />
+    <DCCReference Include="caTimer.pas" />
+    <DCCReference Include="caTranslate.pas" />
+    <DCCReference Include="caTransparentWnd.pas" />
+    <DCCReference Include="caTrayIcon.pas" />
+    <DCCReference Include="caTreeView.pas" />
+    <DCCReference Include="caTypes.pas" />
+    <DCCReference Include="caUtils.pas" />
+    <DCCReference Include="caVector.pas" />
+    <DCCReference Include="caVmt.pas" />
+    <DCCReference Include="caXML.pas" />
+    <DCCReference Include="caXMLData.pas" />
+    <DCCReference Include="caXPControls.pas" />
+    <DCCReference Include="rtl.dcp" />
+    <DCCReference Include="vcl.dcp" />
+    <DCCReference Include="vcldb.dcp" />
+    <DCCReference Include="vclshlctrls.dcp" />
+    <DCCReference Include="vclx.dcp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+</Project>

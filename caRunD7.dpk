@@ -1,0 +1,146 @@
+package caRunD7;
+
+{$R *.res}
+{$R 'caControls.dcr'}
+{$R 'caMenu.dcr'}
+{$R 'caPageControl.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS OFF}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Carls components (run-time)'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+{$DEFINE DEBUG}
+{$DEFINE JEDI_INC}
+
+requires
+  rtl,
+  vcl,
+  vclx,
+  vcldb,
+  vclshlctrls;
+
+contains
+  caSizeMovePanel in 'caSizeMovePanel.pas',
+  caChartLegendListBox in 'caChartLegendListBox.pas',
+  ca8087 in 'ca8087.pas',
+  caChart in 'caChart.pas',
+  caControls in 'caControls.pas',
+  caFrame in 'caFrame.pas',
+  caGraphics in 'caGraphics.pas',
+  caMatrix in 'caMatrix.pas',
+  caXML in 'caXML.pas',
+  caUtils in 'caUtils.pas',
+  caExcel in 'caExcel.pas',
+  caCell in 'caCell.pas',
+  caVector in 'caVector.pas',
+  caTypes in 'caTypes.pas',
+  caConsts in 'caConsts.pas',
+  caLog in 'caLog.pas',
+  caMath in 'caMath.pas',
+  caProcesses in 'caProcesses.pas',
+  caClasses in 'caClasses.pas',
+  caCheckbox in 'caCheckbox.pas',
+  caColorPicker in 'caColorPicker.pas',
+  caButtons in 'caButtons.pas',
+  caTimer in 'caTimer.pas',
+  caEdit in 'caEdit.pas',
+  caFont in 'caFont.pas',
+  caFormInitializer in 'caFormInitializer.pas',
+  caKeyMonitor in 'caKeyMonitor.pas',
+  caMarkup in 'caMarkup.pas',
+  caMenuBar in 'caMenuBar.pas',
+  caMenu in 'caMenu.pas',
+  caSizeBar in 'caSizeBar.pas',
+  caNotifyIcon in 'caNotifyIcon.pas',
+  caPageControl in 'caPageControl.pas',
+  caCrypt in 'caCrypt.pas',
+  caMtxVec in 'caMtxVec.pas',
+  caForms in 'caForms.pas',
+  caIni in 'caIni.pas',
+  caMathEval in 'caMathEval.pas',
+  caMemory in 'caMemory.pas',
+  caNetwork in 'caNetwork.pas',
+  caNodes in 'caNodes.pas',
+  caProfiler in 'caProfiler.pas',
+  caProgress in 'caProgress.pas',
+  caRichEd in 'caRichEd.pas',
+  caStackObjects in 'caStackObjects.pas',
+  caStructures in 'caStructures.pas',
+  caTransparentWnd in 'caTransparentWnd.pas',
+  caSystemMenu in 'caSystemMenu.pas',
+  caMatrixDataset in 'caMatrixDataset.pas',
+  caBaseDataset in 'caBaseDataset.pas',
+  caVmt in 'caVmt.pas',
+  caXPControls in 'caXPControls.pas',
+  caActionMgr in 'caActionMgr.pas',
+  caActionMgrForm in 'caActionMgrForm.pas' {caActionManagerForm},
+  caXMLData in 'caXMLData.pas',
+  caRTTI in 'caRTTI.pas',
+  caActions in 'caActions.pas',
+  caShell in 'caShell.pas' {caSelectFolderForm},
+  caHash in 'caHash.pas',
+  caChiSquared in 'caChiSquared.pas',
+  caRandom in 'caRandom.pas',
+  caHTMLParser in 'caHTMLParser.pas',
+  caHTML in 'caHTML.pas',
+  caPrimes in 'caPrimes.pas',
+  caHTMLIndexer in 'caHTMLIndexer.pas',
+  caMemMapImage in 'caMemMapImage.pas',
+  caArrays in 'caArrays.pas',
+  caChangeParent in 'caChangeParent.pas',
+  caFastFuncs in 'caFastFuncs.pas',
+  caFastStrings in 'caFastStrings.pas',
+  caDir in 'caDir.pas',
+  caDirListView in 'caDirListView.pas',
+  caD5Compat in 'caD5Compat.pas',
+  caLabel in 'caLabel.pas',
+  caTrayIcon in 'caTrayIcon.pas',
+  caListView in 'caListView.pas',
+  caFormHook in 'caFormHook.pas',
+  caGenetic in 'caGenetic.pas',
+  caIntf in 'caIntf.pas',
+  caGoalSeek in 'caGoalSeek.pas',
+  caMessages in 'caMessages.pas',
+  caLocalizer in 'caLocalizer.pas',
+  caLocalizerForm in 'caLocalizerForm.pas' {caLocalizerDialog},
+  caTreeView in 'caTreeView.pas',
+  caTranslate in 'caTranslate.pas',
+  caPopupMenu in 'caPopupMenu.pas',
+  caNetAPI in 'caNetAPI.pas',
+  caStatsBase in 'caStatsBase.pas',
+  caStats in 'caStats.pas',
+  caMutex in 'caMutex.pas',
+  caDiagram in 'caDiagram.pas',
+  caSizeMove in 'caSizeMove.pas',
+  caTextStore in 'caTextStore.pas',
+  caMime in 'caMime.pas',
+  caMimeStream in 'caMimeStream.pas',
+  caEditListBox in 'caEditListBox.pas',
+  caFlyout in 'caFlyout.pas',
+  caCSV in 'caCSV.pas',
+  caTextStream in 'caTextStream.pas',
+  caFormScaler in 'caFormScaler.pas',
+  caServices in 'caServices.pas',
+  caRadioButton in 'caRadioButton.pas',
+  caAppConfig in 'caAppConfig.pas';
+
+end.
